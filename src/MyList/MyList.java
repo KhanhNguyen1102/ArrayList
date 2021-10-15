@@ -58,8 +58,8 @@ public class MyList<E> {
     }
 //    public boolean contains(E o){};
 //    public int indexOf(E o){};
-    private void clear(){
-
+    public void clear(){
+         elements =  new Object[DEFAULT_CAPACITY];
     }
     private void ensureCapacity() {
         int newSize = elements.length * 2;
